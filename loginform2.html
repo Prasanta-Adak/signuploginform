@@ -1,0 +1,41 @@
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/formstyle.css">
+</head>
+<body>
+<div class="box">
+<h1>Login</h1>
+<form class="enterbox" id="form" onsubmit="demo()">
+<div class="inputbox">
+<input type="text" name="username" required="required">
+<label>username<label>
+</div>
+<div class="inputbox">
+<input type="password" name="password" required="required">
+<label>Password</label>
+</div>
+<input type="submit" value="login">
+<a href="signup.html"><span style="color: aqua;">create new account !</span></a>
+</form>
+
+<!-- start javascript coding -->
+
+<script>
+function demo()
+{
+var form=document.getElementById("form");
+var x=confirm("are you sure ?");
+if(x==true)
+{
+form.action="index.html";
+}
+else{
+location.reload();
+}
+}
+</script>
+
+<!-- end javascript coding -->
+
+</div>
+</body>
